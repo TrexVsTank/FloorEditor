@@ -1,0 +1,51 @@
+/* Base Layout */
+.editor {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+/* Canvas */
+.canvas {
+  flex: 1;
+  position: relative;
+  background: #f8f9fa;
+  background-size: 20px 20px;
+  user-select: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* 저장버튼 */
+.capture {
+  position: absolute;
+  right: 20px;  /* 오른쪽 20px */
+  top: 10px;  /* 위쪽 20px */
+  font-family: '42dot Sans', serif;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  color: #666;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
